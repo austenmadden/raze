@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'raze'
-  s.version     = '0.0.0'
-  s.date        = '2015-02-09'
+  s.version     = '0.0.1'
+  s.date        = '2016-09-11'
   s.summary     = 'Gem for flattening collections'
   s.description = <<-descr
   Provides methods to flatten nested collections into
