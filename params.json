@@ -1,0 +1,6 @@
+{
+  "name": "Raze",
+  "tagline": "Ruby Gem to flatten nested collections into one dimensional representations. ",
+  "body": "# Raze\r\nRuby Gem to flatten nested collections into one dimensional representations.\r\n\r\nhttps://rubygems.org/gems/raze\r\n\r\n##Examples\r\n```\r\ntest = {test1: ['test_string', :test_symbol], test2: {test_hash: ['test_string']}}\r\n\r\nRaze.flatten(test)\r\n=> [:test1, \"test_string\", :test_symbol, :test2, :test_hash, \"test_string\"]\r\n\r\n```\r\n\r\nYou might be wondering how the flatten method above differs from flatten methods in [array](https://ruby-doc.org/core-2.2.0/Array.html#method-i-flatten) or [hash](https://ruby-doc.org/core-2.2.0/Hash.html#method-i-flatten) ruby core libraries. Unfortunately on their own the core methods won't flatten values/recurse through hashes. \r\n\r\n```\r\nirb(main):010:0> a = {test1: ['test_string', :test_symbol], test2: {test_hash: ['test_string']}}\r\n=> {:test1=>[\"test_string\", :test_symbol], :test2=>{:test_hash=>[\"test_string\"]}}\r\nirb(main):011:0> a.flatten(30)\r\n=> [:test1, \"test_string\", :test_symbol, :test2, {:test_hash=>[\"test_string\"]}]\r\n\r\n```\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
