@@ -1,6 +1,6 @@
 require 'spec_helper'
 describe Raze do
-  describe '#flatten' do
+  describe '.flatten' do
     let(:test) {
                     {
                       test1: ['string_in_array', :symbol_in_array],
