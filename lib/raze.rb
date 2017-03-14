@@ -4,9 +4,7 @@ class Raze
     if collection.class == Hash
       flatten(collection.flatten)
     elsif collection.class == Array
-      collection.map do |child|
-        flatten(child)
-      end.flatten
+      collection.map { |child| flatten(child) }.flatten
     else
       collection
     end
